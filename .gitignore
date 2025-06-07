@@ -1,0 +1,56 @@
+# R specific files
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.Rapp.history
+*.RData
+*.rds
+
+# Package development files
+.Rbuildignore
+*.Rcheck/
+
+# Output files
+*.png
+*.pdf
+*.jpg
+*.svg
+
+# Data files (uncomment if you want to exclude data)
+#data/*.csv
+#data/*.xlsx
+#data/*.txt
+
+# Model outputs
+outputs/
+models/*/output/
+*.csv
+*.txt
+
+# Raven specific
+*.rvc
+*.rvt 
+*.rvp
+*.rvi
+*.rvh
+*.exe
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.Rproj
