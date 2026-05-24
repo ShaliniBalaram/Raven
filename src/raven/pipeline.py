@@ -43,9 +43,9 @@ class Pipeline:
     def flow_accumulation(self, fdir: io.RasterData) -> io.RasterData:
         return flow.flow_accumulation(fdir)
 
-    def extract_streams(self, facc: io.RasterData) -> streams.StreamCollection:
+    def extract_streams(self, fdir: io.RasterData, facc: io.RasterData) -> streams.StreamCollection:
         threshold = int(self.config.get("streams", {}).get("accumulation_threshold", 1000))
-        return streams.extract_streams(facc, threshold=threshold)
+        return streams.extract_streams(facc, threshold=threshold, fdir=fdir)
 
     def delineate_basins(
         self,
@@ -109,8 +109,7 @@ class Pipeline:
         conditioned = self.condition_dem(dem)
         fdir = self.flow_direction(conditioned)
         facc = self.flow_accumulation(fdir)
-        stream_collection = self.extract_streams(facc)
+        stream_collection = self.extract_streams(fdir, facc)
         basin_collection = self.delineate_basins(fdir, stream_collection)
         reach_graph = self.build_graph(stream_collection, basin_collection)
         return self.write_outputs(dem, conditioned, fdir, facc, stream_collection, basin_collection, reach_graph)
-

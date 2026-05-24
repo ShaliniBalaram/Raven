@@ -12,6 +12,6 @@ Always check licensing, vertical datum, spatial resolution, and hydrologic condi
 
 ## Bundled Demo Data
 
-The runnable demo uses `DEM.tif` from Zenodo record `10.5281/zenodo.7797361`, published as a dataset for an integrated socio-hydrological modeling framework. The original raster is in EPSG:4326, so `scripts/prepare_zenodo_dem.py` creates a compact projected subset in EPSG:32650 for RAVEN processing.
+The runnable demo uses the Gore Range GeoTIFF archive from Zenodo record `10.5281/zenodo.3940482`. The archive contains multiscale projected elevation models centered on the Gore Range, Colorado, USA. `scripts/prepare_gore_range_dem.py` extracts the 250 m Albers GeoTIFF and writes a compact high-relief subset for RAVEN processing.
 
-Source record: https://zenodo.org/records/7797361
+Source record: https://zenodo.org/records/3940482

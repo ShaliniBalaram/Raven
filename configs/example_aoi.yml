@@ -1,8 +1,8 @@
 # Human-readable name used in output filenames.
-name: zenodo_7797361
+name: gore_range
 
 # Projected DEM path. Use a local GeoTIFF in metres or feet, not latitude/longitude.
-dem_path: data/processed/zenodo_7797361_dem_utm50n.tif
+dem_path: data/processed/gore_range_albers_250m_subset.tif
 
 # Optional polygon AOI for clipping before processing.
 aoi_path:
@@ -20,7 +20,7 @@ flow:
 
 streams:
   # Minimum upstream cell count for a cell to become part of the stream mask.
-  accumulation_threshold: 40
+  accumulation_threshold: 150
 
 basins:
   # Supported values: confluences, pour_points.

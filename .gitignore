@@ -20,16 +20,15 @@ outputs/graphs/*
 outputs/figures/*
 
 !data/raw/.gitkeep
-!data/raw/zenodo_7797361_dem.tif
 !data/interim/.gitkeep
 !data/processed/.gitkeep
-!data/processed/zenodo_7797361_dem_utm50n.tif
+!data/processed/gore_range_albers_250m_subset.tif
 !outputs/streams/.gitkeep
-!outputs/streams/zenodo_7797361_streams.gpkg
+!outputs/streams/gore_range_streams.gpkg
 !outputs/basins/.gitkeep
-!outputs/basins/zenodo_7797361_basins.gpkg
+!outputs/basins/gore_range_basins.gpkg
 !outputs/graphs/.gitkeep
-!outputs/graphs/zenodo_7797361_graph.graphml
-!outputs/graphs/zenodo_7797361_graph.json
+!outputs/graphs/gore_range_graph.graphml
+!outputs/graphs/gore_range_graph.json
 !outputs/figures/.gitkeep
-!outputs/figures/zenodo_7797361_quicklook.png
+!outputs/figures/gore_range_quicklook.png

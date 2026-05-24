@@ -14,12 +14,12 @@ Run the bundled sample:
 raven run configs/example_aoi.yml
 ```
 
-The example config uses `data/processed/zenodo_7797361_dem_utm50n.tif`, a projected subset derived from a real Zenodo DEM.
+The example config uses `data/processed/gore_range_albers_250m_subset.tif`, a projected subset derived from a real Gore Range DEM hosted on Zenodo.
 
 To re-download and rebuild that DEM-derived subset:
 
 ```bash
-python scripts/prepare_zenodo_dem.py
+python scripts/prepare_gore_range_dem.py
 ```
 
 For your own area of interest, copy the example config:

@@ -42,7 +42,7 @@ def streams(config_path: str) -> None:
     dem = pipe.condition_dem(pipe.load_dem())
     fdir = pipe.flow_direction(dem)
     facc = pipe.flow_accumulation(fdir)
-    extracted = pipe.extract_streams(facc)
+    extracted = pipe.extract_streams(fdir, facc)
     click.echo(f"{len(extracted.reaches)} reaches extracted")
 
 
@@ -54,7 +54,7 @@ def graph(config_path: str) -> None:
     dem = pipe.condition_dem(pipe.load_dem())
     fdir = pipe.flow_direction(dem)
     facc = pipe.flow_accumulation(fdir)
-    extracted = pipe.extract_streams(facc)
+    extracted = pipe.extract_streams(fdir, facc)
     basin_collection = pipe.delineate_basins(fdir, extracted)
     reach_graph = pipe.build_graph(extracted, basin_collection)
     click.echo(f"{reach_graph.number_of_nodes()} nodes, {reach_graph.number_of_edges()} edges")
@@ -62,4 +62,3 @@ def graph(config_path: str) -> None:
 
 if __name__ == "__main__":
     cli()
-
