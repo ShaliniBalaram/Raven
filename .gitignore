@@ -14,6 +14,7 @@ dist/
 data/raw/*
 data/interim/*
 data/processed/*
+data/reference/*
 outputs/streams/*
 outputs/basins/*
 outputs/graphs/*
@@ -24,6 +25,8 @@ outputs/validation/*
 !data/interim/.gitkeep
 !data/processed/.gitkeep
 !data/processed/gore_range_albers_250m_subset.tif
+!data/reference/.gitkeep
+!data/reference/usgs_nhd_gore_flowlines.gpkg
 !outputs/streams/.gitkeep
 !outputs/streams/gore_range_streams.gpkg
 !outputs/basins/.gitkeep
@@ -34,3 +37,5 @@ outputs/validation/*
 !outputs/figures/.gitkeep
 !outputs/figures/gore_range_quicklook.png
 !outputs/validation/.gitkeep
+!outputs/validation/stream_validation.json
+!outputs/validation/stream_validation.png

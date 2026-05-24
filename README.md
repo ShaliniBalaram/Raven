@@ -65,7 +65,7 @@ The CLI is intentionally thin. Most behavior lives in `raven.Pipeline`, so the s
 RAVEN can compare extracted streams against an external reference hydrography layer:
 
 ```bash
-python scripts/validate_streams.py --reference-streams path/to/reference_flowlines.gpkg
+python scripts/validate_streams.py --reference-streams data/reference/usgs_nhd_gore_flowlines.gpkg --tolerance 500
 ```
 
 See `docs/validation.md` for metrics and recommended reference sources.

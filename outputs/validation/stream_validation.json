@@ -1,0 +1,14 @@
+{
+  "raven_reach_count": 70,
+  "reference_feature_count": 1974,
+  "raven_total_length": 138331.99846221437,
+  "reference_total_length": 863213.2353172982,
+  "length_ratio": 0.16025240670848445,
+  "mean_nearest_reference_distance": 348.1989638477534,
+  "median_nearest_reference_distance": 136.41578179167624,
+  "max_nearest_reference_distance": 2168.9194798171334,
+  "matched_length_within_tolerance": 114414.73657263636,
+  "matched_length_fraction": 0.8271024625144048,
+  "reference_coverage_fraction": 0.4691044332657184,
+  "tolerance": 500.0
+}
