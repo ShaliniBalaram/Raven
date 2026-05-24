@@ -10,3 +10,8 @@ RAVEN works with local DEM files. These sources are commonly used in geomatics a
 
 Always check licensing, vertical datum, spatial resolution, and hydrologic conditioning status before comparing outputs between datasets.
 
+## Bundled Demo Data
+
+The runnable demo uses `DEM.tif` from Zenodo record `10.5281/zenodo.7797361`, published as a dataset for an integrated socio-hydrological modeling framework. The original raster is in EPSG:4326, so `scripts/prepare_zenodo_dem.py` creates a compact projected subset in EPSG:32650 for RAVEN processing.
+
+Source record: https://zenodo.org/records/7797361

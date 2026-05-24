@@ -20,15 +20,16 @@ outputs/graphs/*
 outputs/figures/*
 
 !data/raw/.gitkeep
-!data/raw/sample_dem.tif
+!data/raw/zenodo_7797361_dem.tif
 !data/interim/.gitkeep
 !data/processed/.gitkeep
+!data/processed/zenodo_7797361_dem_utm50n.tif
 !outputs/streams/.gitkeep
-!outputs/streams/sample_aoi_streams.gpkg
+!outputs/streams/zenodo_7797361_streams.gpkg
 !outputs/basins/.gitkeep
-!outputs/basins/sample_aoi_basins.gpkg
+!outputs/basins/zenodo_7797361_basins.gpkg
 !outputs/graphs/.gitkeep
-!outputs/graphs/sample_aoi_graph.graphml
-!outputs/graphs/sample_aoi_graph.json
+!outputs/graphs/zenodo_7797361_graph.graphml
+!outputs/graphs/zenodo_7797361_graph.json
 !outputs/figures/.gitkeep
-!outputs/figures/sample_aoi_quicklook.png
+!outputs/figures/zenodo_7797361_quicklook.png

@@ -14,12 +14,12 @@ Run the bundled sample:
 raven run configs/example_aoi.yml
 ```
 
-The example config uses `data/raw/sample_dem.tif`, a synthetic projected DEM that is small enough to keep in the repository.
+The example config uses `data/processed/zenodo_7797361_dem_utm50n.tif`, a projected subset derived from a real Zenodo DEM.
 
-To rebuild that DEM from source:
+To re-download and rebuild that DEM-derived subset:
 
 ```bash
-python scripts/create_sample_data.py
+python scripts/prepare_zenodo_dem.py
 ```
 
 For your own area of interest, copy the example config:

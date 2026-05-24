@@ -10,7 +10,7 @@ The project is designed for readable hydrologic terrain analysis workflows. Give
 
 RAVEN is a portfolio-scale geomatics project focused on terrain analysis, raster processing, vector hydrography, and graph-based stream networks. It is intentionally compact: the code is large enough to show the full workflow, but small enough for a reviewer to read in one sitting.
 
-The bundled sample DEM is synthetic and lightweight, so the project can be tested without downloading external elevation data.
+The bundled demo uses a real DEM from Zenodo, prepared as a small projected subset so the workflow can run quickly in a repository checkout.
 
 ## What It Produces
 
@@ -30,12 +30,12 @@ pip install -e .
 raven run configs/example_aoi.yml
 ```
 
-The example config points to `data/raw/sample_dem.tif`, a synthetic projected DEM included for smoke testing. For real work, copy `configs/example_aoi.yml`, point `dem_path` to a projected DEM, and tune the stream threshold for the area of interest. RAVEN refuses geographic CRSs for processing because cell size and area calculations need projected units.
+The example config points to `data/processed/zenodo_7797361_dem_utm50n.tif`, a projected subset derived from `DEM.tif` in Zenodo record `10.5281/zenodo.7797361`. For real work, copy `configs/example_aoi.yml`, point `dem_path` to a projected DEM, and tune the stream threshold for the area of interest. RAVEN refuses geographic CRSs for processing because cell size and area calculations need projected units.
 
-To regenerate the bundled DEM:
+To re-download and regenerate the bundled Zenodo-derived DEM:
 
 ```bash
-python scripts/create_sample_data.py
+python scripts/prepare_zenodo_dem.py
 ```
 
 ## Repository Layout
@@ -44,9 +44,9 @@ python scripts/create_sample_data.py
 src/raven/       Python package and CLI
 configs/         Example YAML configuration
 docs/            Quickstart, methodology, and data-source notes
-tests/           Synthetic smoke tests with no network dependency
-data/            Sample DEM plus ignored local working folders
-outputs/         Sample outputs plus ignored regenerable products
+tests/           Tiny smoke tests with no network dependency
+data/            Zenodo DEM subset plus ignored local working folders
+outputs/         Zenodo-derived outputs plus ignored regenerable products
 ```
 
 ## Command Line
