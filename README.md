@@ -45,8 +45,8 @@ src/raven/       Python package and CLI
 configs/         Example YAML configuration
 docs/            Quickstart, methodology, and data-source notes
 tests/           Tiny smoke tests with no network dependency
-data/            Zenodo DEM subset plus ignored local working folders
-outputs/         Zenodo-derived outputs plus ignored regenerable products
+data/            Gore Range DEM subset plus ignored local working folders
+outputs/         Gore Range outputs plus ignored regenerable products
 ```
 
 ## Command Line
@@ -77,4 +77,4 @@ pip install -e ".[dev]"
 pytest
 ```
 
-The tests use toy rasters and toy graphs so they run quickly and do not need external data downloads.
+The tests use tiny in-memory rasters and graphs so they run quickly and do not need external data downloads.

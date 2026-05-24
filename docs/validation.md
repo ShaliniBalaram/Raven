@@ -22,7 +22,7 @@ Run the same workflow with another reference stream file:
 
 ```bash
 python scripts/validate_streams.py \
-  --reference-streams path/to/reference_flowlines.gpkg \
+  --reference-streams data/reference/usgs_nhd_gore_flowlines.gpkg \
   --tolerance 250
 ```
 

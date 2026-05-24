@@ -8,7 +8,7 @@ source .venv/bin/activate
 pip install -e .
 ```
 
-Run the bundled sample:
+Run the bundled Gore Range workflow:
 
 ```bash
 raven run configs/example_aoi.yml
@@ -22,13 +22,13 @@ To re-download and rebuild that DEM-derived subset:
 python scripts/prepare_gore_range_dem.py
 ```
 
-For your own area of interest, copy the example config:
+For another area of interest, copy the example config:
 
 ```bash
-cp configs/example_aoi.yml configs/my_aoi.yml
+cp configs/example_aoi.yml configs/gore_range_variant.yml
 ```
 
-Then edit `configs/my_aoi.yml`:
+Then edit the copied config:
 
 - set `name`
 - set `dem_path`
@@ -36,10 +36,10 @@ Then edit `configs/my_aoi.yml`:
 - choose a stream accumulation threshold
 - keep the DEM in a projected CRS
 
-Run your config:
+Run the copied config:
 
 ```bash
-raven run configs/my_aoi.yml
+raven run configs/gore_range_variant.yml
 ```
 
 Outputs are written under `outputs/` by default.

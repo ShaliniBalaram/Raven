@@ -21,7 +21,7 @@ def test_fill_flow_and_stream_smoke(tiny_dem):
     assert {"reach_id", "from_node", "to_node"}.issubset(extracted.reaches.columns)
 
 
-def test_strahler_and_shreve_on_toy_graph():
+def test_strahler_and_shreve_on_minimal_graph():
     graph = nx.DiGraph()
     graph.add_edges_from([(1, 3), (2, 3), (3, 4), (5, 4)])
 
