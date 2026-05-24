@@ -12,6 +12,13 @@ RAVEN is a portfolio-scale geomatics project focused on terrain analysis, raster
 
 The bundled demo uses a real Gore Range DEM from Zenodo, prepared as a small projected subset so the workflow can run quickly in a repository checkout.
 
+## Skills Demonstrated
+
+- DEM conditioning, flow accumulation, and stream extraction
+- GeoPackage, GraphML, JSON, and raster output handling
+- Hydrologic network validation against reference hydrography
+- Reproducible CLI workflows with tests and documented data lineage
+
 ## What It Produces
 
 - conditioned DEM and flow rasters
