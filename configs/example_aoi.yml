@@ -20,7 +20,7 @@ flow:
 
 streams:
   # Minimum upstream cell count for a cell to become part of the stream mask.
-  accumulation_threshold: 1000
+  accumulation_threshold: 20
 
 basins:
   # Supported values: confluences, pour_points.
@@ -34,4 +34,3 @@ outputs:
   basins: outputs/basins
   graphs: outputs/graphs
   figures: outputs/figures
-

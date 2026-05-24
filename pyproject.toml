@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "raven-geomatics"
 version = "0.1.0"
-description = "Reproducible DEM-to-drainage-network toolkit for geomatics workflows"
+description = "Geomatics toolkit for reproducible DEM conditioning, stream extraction, basin delineation, and reach graph analysis"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
@@ -16,6 +16,7 @@ dependencies = [
   "matplotlib>=3.8",
   "networkx>=3.2",
   "numpy>=1.26",
+  "pillow>=10.0",
   "pyflwdir>=0.5",
   "pyproj>=3.6",
   "pysheds>=0.3",
@@ -36,4 +37,3 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-
