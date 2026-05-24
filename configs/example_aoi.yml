@@ -1,0 +1,37 @@
+# Human-readable name used in output filenames.
+name: sample_aoi
+
+# Projected DEM path. Use a local GeoTIFF in metres or feet, not latitude/longitude.
+dem_path: data/raw/sample_dem.tif
+
+# Optional polygon AOI for clipping before processing.
+aoi_path:
+
+# Optional projected CRS override, for example EPSG:32643.
+target_crs:
+
+conditioning:
+  # Supported values: pysheds, whitebox, simple.
+  method: simple
+
+flow:
+  # Supported values: pyflwdir, pysheds, simple.
+  method: simple
+
+streams:
+  # Minimum upstream cell count for a cell to become part of the stream mask.
+  accumulation_threshold: 1000
+
+basins:
+  # Supported values: confluences, pour_points.
+  mode: confluences
+  pour_points_path:
+  snap_distance: 150
+
+outputs:
+  root: outputs
+  streams: outputs/streams
+  basins: outputs/basins
+  graphs: outputs/graphs
+  figures: outputs/figures
+
