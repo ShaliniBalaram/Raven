@@ -60,6 +60,16 @@ raven graph configs/example_aoi.yml
 
 The CLI is intentionally thin. Most behavior lives in `raven.Pipeline`, so the same workflow can be used from scripts or notebooks.
 
+## Validation
+
+RAVEN can compare extracted streams against an external reference hydrography layer:
+
+```bash
+python scripts/validate_streams.py --reference-streams path/to/reference_flowlines.gpkg
+```
+
+See `docs/validation.md` for metrics and recommended reference sources.
+
 ## Development
 
 ```bash

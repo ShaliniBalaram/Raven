@@ -18,6 +18,7 @@ outputs/streams/*
 outputs/basins/*
 outputs/graphs/*
 outputs/figures/*
+outputs/validation/*
 
 !data/raw/.gitkeep
 !data/interim/.gitkeep
@@ -32,3 +33,4 @@ outputs/figures/*
 !outputs/graphs/gore_range_graph.json
 !outputs/figures/.gitkeep
 !outputs/figures/gore_range_quicklook.png
+!outputs/validation/.gitkeep
